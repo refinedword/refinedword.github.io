@@ -1,5 +1,5 @@
 <nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <a href="{{ '/' | relative_url }}" class="header-logo">{{ site.name }}</a>
   <ul class="header-links">
     {% if site.about_enabled == true %}
       <li>
@@ -177,9 +177,7 @@
       </li>
     {% endif %}
   </ul>
-</nav>
-
-{% if site.tag_nav_enabled %}
+  {% if site.tag_nav_enabled %}
   <ul class="header-tags {% if site.scrollappear_enabled %}scrollappear{% endif %}">
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
@@ -192,3 +190,4 @@
     {% endfor %}
   </ul>
 {% endif %}
+</nav>

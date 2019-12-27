@@ -12,7 +12,7 @@
   display: inline-block;
   font-family: $serif;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: $base-font-weight;
   color: $header-logo-color;
   text-decoration: none;
 }
@@ -46,13 +46,15 @@
 }
 
 .header-tags {
+  float: right;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 15px 0 0;
   list-style: none;
   li {
     display: inline-block;
     padding-right: 10px;
     a {
+      font-size: 20px;
       display: inline-block;
       color: $header-link-color;
       text-decoration: none;
@@ -77,11 +79,11 @@
     }
   }
   .header-tags {
-    margin: 20px 0 0;
     text-align: center;
-
+    float: none;
     li {
       padding: 0 5px;
+      text-align: center;
     }
   }
 }

@@ -1,0 +1,4 @@
+---
+slug: prayers
+name: Prayers
+---
