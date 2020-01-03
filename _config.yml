@@ -1,9 +1,9 @@
 # Mandatory settings
 
 blog_theme: light # Or use dark
-name: Refined Word
+name: Refined Words
 paginate: 25
-url: http://refinedword.org
+url: http://refinedwords.org
 
 
 # Optional settings
