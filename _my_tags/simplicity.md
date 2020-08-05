@@ -1,4 +1,0 @@
----
-slug: simplicity
-name: Simplicity
----

@@ -1,20 +1,42 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Refined Words</title>
+    <description></description>
+    <link>http://refinedwords.org</link>
+    <atom:link href="http://refinedwords.org/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Divine Simplicity: Worshipping a Simple God</title>
+        <description>&quot;The words of the Lord are pure words; As silver tried in a furnace on the earth, refined seven times.&quot;</description>
+        <pubDate>Mon, 03 Aug 2020 00:00:00 -0700</pubDate>
+        <link>http://refinedwords.org/posts/divine-simplicity-worshipping-a-simple-god</link>
+        <guid isPermaLink="true">http://refinedwords.org/posts/divine-simplicity-worshipping-a-simple-god</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Sweet Uncertainty</title>
+        <description>&quot;The words of the Lord are pure words; As silver tried in a furnace on the earth, refined seven times.&quot;</description>
+        <pubDate>Wed, 25 Mar 2020 00:00:00 -0700</pubDate>
+        <link>http://refinedwords.org/posts/sweet-uncertainty</link>
+        <guid isPermaLink="true">http://refinedwords.org/posts/sweet-uncertainty</guid>
+      </item>
+    
+      <item>
+        <title>Broaden My Narrow Vision</title>
+        <description>&quot;The words of the Lord are pure words; As silver tried in a furnace on the earth, refined seven times.&quot;</description>
+        <pubDate>Thu, 02 Jan 2020 00:00:00 -0800</pubDate>
+        <link>http://refinedwords.org/posts/broaden-my-narrow-vision</link>
+        <guid isPermaLink="true">http://refinedwords.org/posts/broaden-my-narrow-vision</guid>
+      </item>
+    
+      <item>
+        <title>My Eternal Joy</title>
+        <description>&quot;The words of the Lord are pure words; As silver tried in a furnace on the earth, refined seven times.&quot;</description>
+        <pubDate>Thu, 26 Dec 2019 00:00:00 -0800</pubDate>
+        <link>http://refinedwords.org/posts/my-eternal-joy</link>
+        <guid isPermaLink="true">http://refinedwords.org/posts/my-eternal-joy</guid>
+      </item>
+    
   </channel>
 </rss>
