@@ -23,3 +23,31 @@
 {% if site.theme_toggle == true %}
   {% asset themetoggle.js %}
 {% endif %}
+
+<script>
+	var refTagger = {
+		settings: {
+			bibleVersion: "ESV",
+			roundCorners: true,
+			noSearchClassNames: ["no-ref"],			
+			socialSharing: [],
+			customStyle : {
+				heading: {
+					backgroundColor : "#ffffff",
+					color : "#000000",
+					fontFamily : "Georgia, Times, 'Times New Roman', serif",
+					fontSize : "14px"
+				},
+				body   : {
+					fontFamily : "Georgia, Times, 'Times New Roman', serif",
+					fontSize : "14px"
+				}
+			}
+		}
+	};
+	(function(d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = "//api.reftagger.com/v2/RefTagger.js";
+		s.parentNode.insertBefore(g, s);
+	}(document, "script"));
+</script>
